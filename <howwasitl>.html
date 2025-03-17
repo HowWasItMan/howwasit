@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rate and review places, events, and services with How Was It? Share experiences effortlessly and get honest feedback from others.">
+    <meta property="og:title" content="How Was It?">
+    <meta property="og:description" content="Easily rate and review places, events, and services. Share experiences effortlessly.">
+    <meta property="og:image" content="your-image-url.jpg">
+    <meta property="og:url" content="your-website-url.com">
+    <title>How Was It?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000;
+            color: white;
+            padding: 50px;
+        }
+
+        header {
+            background: #2a0134;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #3a0141;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #a020f0;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #d896ff;
+        }
+
+        .content {
+            margin-top: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            background: #1a001f;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(160, 32, 240, 0.5);
+        }
+
+        button {
+            padding: 15px 20px;
+            font-size: 18px;
+            margin-top: 20px;
+            cursor: pointer;
+            background: linear-gradient(to right, #a020f0, #4b0082);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #d896ff, #5a007a);
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 20px;
+            background: #2a0134;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px #3a0141;
+        }
+
+        footer p {
+            color: #d896ff;
+        }
+
+        /* Collapsible styles */
+        .collapsible {
+            background-color: #2a0134;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .collapsible:hover {
+            background-color: #4b0082;
+        }
+
+        .content-hidden {
+            display: none;
+            padding: 15px;
+            text-align: left;
+            background: #1a001f;
+            border-radius: 10px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>How Was It?</h1>
+        <p>On a mission to empower meaningful human connection</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#privacy">Privacy Policy</a>
+            <a href="#terms">Terms of Service</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="content" id="about">
+        <h2>About</h2>
+        <p>"How Was It?" is the best social media platform meant for building relationships.</p>
+    </div>
+
+    <button class="collapsible">Privacy Policy</button>
+    <div class="content-hidden" id="privacy">
+        <p><strong>Data Collection:</strong> We collect name, email, and device information for account security and analytics.</p>
+        <p><strong>Data Usage:</strong> Your data is used for personalization, fraud prevention, and service improvement.</p>
+        <p><strong>Data Sharing:</strong> We do not sell personal data but may share limited data with third-party services for analytics and security.</p>
+        <p><strong>Data Deletion:</strong> You may request deletion of your data at <a href="mailto:support@howwasit.com">support@howwasit.com</a>.</p>
+    </div>
+
+    <button class="collapsible">Terms of Service</button>
+    <div class="content-hidden" id="terms">
+        <p><strong>Acceptance of Terms:</strong> By using "How Was It?", you agree to these terms and our Privacy Policy.</p>
+        <p><strong>Age Requirement:</strong> Users must be 13 years or older. If under 18, parental consent is required.</p>
+        <p><strong>User Conduct:</strong> No harassment, hate speech, or spam.</p>
+        <p><strong>Intellectual Property:</strong> You retain ownership of your content but grant us a license to display and distribute it.</p>
+        <p><strong>Liability Disclaimer:</strong> "How Was It?" is provided "as is." We are not responsible for outages or third-party issues.</p>
+        <p><strong>App Store Compliance:</strong> Apple is not responsible for any claims or issues related to this service.</p>
+    </div>
+
+    <div class="content" id="contact">
+        <h2>Contact Us</h2>
+        <p>For any questions or legal inquiries, contact us at <a href="mailto:support@howwasit.com">support@howwasit.com</a></p>
+    </div>
+
+    <button id="downloadApp">Download the App</button>
+
+    <footer>
+        <p>&copy; 2025 How Was It? All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Collapsible function
+        document.querySelectorAll(".collapsible").forEach(button => {
+            button.addEventListener("click", function() {
+                this.classList.toggle("active");
+                let content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        });
+
+        // Download button link
+        document.getElementById("downloadApp").addEventListener("click", function() {
+            window.location.href = "your-app-download-link.com";
+        });
+    </script>
+</body>
+</html>
